@@ -179,7 +179,7 @@
   <!-- ====================================================== -->
   <!-- Compile a Hadoop contrib's files                       -->
   <!-- ====================================================== -->
-  <target name="compile" depends="init, ivy-retrieve-common" unless="skip.contrib">
+  <target name="compile" unless="skip.contrib">
     <echo message="contrib: ${name}"/>
     <javac
      encoding="${build.encoding}"
